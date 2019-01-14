@@ -4,7 +4,7 @@ const styles = {
     transition: 'all 1s ease-out'
 };
 
-export class Main extends React.Component {
+export class Transition extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -28,16 +28,6 @@ export class Main extends React.Component {
     render() {
         return (
             <div>
-                <nav>
-                    <div className="nav-wrapper orange darken-2">
-                        <ul className="left">
-                            <li className="active"><a href="#">TRANSITIONS</a></li>
-                            <li><a href="#">ANIMATIONS</a></li>
-                            <li><a href="#">REACTJS + CSS TRANSITIONS</a></li>
-                            <li><a href="#">REACTJS + CSS ANIMATIONS</a></li>
-                        </ul>
-                    </div>
-                </nav>
                 <div className="container">
                     <div className="row">
                         <div className="s12">
