@@ -1,8 +1,5 @@
 import React from "react";
-
-const styles = {
-    transition: 'all 1s ease-out'
-};
+import styles from '../assets/styles.css'
 
 export class Transition extends React.Component {
     constructor() {
@@ -26,6 +23,8 @@ export class Transition extends React.Component {
     }
 
     render() {
+        const { transition } = styles;
+        console.log(transition);
         return (
             <div>
                 <div className="container">
@@ -37,8 +36,8 @@ export class Transition extends React.Component {
 
                     <div className="row">
                         <div className="s8 offset-s2 center-align">
-                            <div className="card deep-purple z-depth-2"
-                                 style={{...styles, opacity: this.state.opacity, transform: 'scale(' + this.state.scale + ')'}}>
+                            <div className={`card deep-purple z-depth-2 ${transition}`}
+                                 style={{opacity: this.state.opacity, transform: 'scale(' + this.state.scale + ')'}}>
                                 <div className="card-content white-text">
                                     <span className="card-title">Awesome Animations!</span>
                                     <p>CSS Animations are pretty cool. But combined with ReactJS ... &lt;3</p>
